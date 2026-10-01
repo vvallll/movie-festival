@@ -1,19 +1,134 @@
+* {
+    box-sizing: border-box;
+}
+
 html {
-    font-size: 22px;
+    scroll-behavior: smooth;
 }
 
 body {
-    min-height: 100vh;
-    max-width: 800px;
-    margin: 0 auto;
-    padding: 1rem;
-    border-left: 1px solid #333;
-    border-right: 1px solid #333;
+    margin: 0;
+    min-width: 320px;
+
+    background-color: #11100f;
+    color: #e8e1d5;
+
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 16px;
+    line-height: 1.6;
 }
 
-th, td, caption {
-    border: 1px solid #333;
-    font-family: 'Courier New', Courier, monospace;
-    border-collapse: separate;
-    padding: 0.5rem;
+.container {
+    width: 90%;
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 40px 60px;
+    box-sizing: border-box;
+}
+
+h1, h2, h3 {
+    font-family: Georgia, "Times New Roman", serif;
+    font-weight: 400;
+    line-height: 1.2;
+    color: #f1eadf;
+}
+
+h1 {
+    font-size: clamp(2rem, 5vw, 3.5rem);
+}
+
+h2 {
+    font-size: clamp(1.6rem, 3.5vw, 2.4rem);
+}
+
+h3 {
+    font-size: clamp(1.25rem, 2.5vw, 1.7rem);
+}
+
+.festival-title {
+    text-align: center;
+}
+
+a {
+    color: #c99a8a;
+    text-decoration: none;
+}
+
+a:hover {
+    color: #e5b9a8;
+    text-decoration: underline;
+}
+
+hr {
+    border: 0;
+    border-top: 1px solid #3a3531;
+    margin: 40px 0;
+}
+
+/* figcaption {
+    width: 100%;
+    margin-top: 0;
+    color: #adada7;
+    font-size: 14px;
+    font-style: italic;
+}
+
+figure img {
+    width: 100%;
+    display: block;
+} */
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 30px 0;
+    background-color: #181615;
+}
+
+caption {
+    margin-bottom: 12px;
+
+    font-family: Georgia, "Times New Roman", serif;
+    font-size: 1.3rem;
+    color: #f1eadf;
+    text-align: left;
+}
+
+th, td {
+    padding: 14px 16px;
+    border-bottom: 1px solid #3a3531;
+    text-align: left;
+}
+
+th {
+    color: #d5aa98;
+    font-weight: 600;
+}
+
+td {
+    color: #d8d1c7;
+}
+
+tbody tr:hover {
+    background-color: #211d1b;
+}
+
+nav ul {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+
+    margin: 0;
+    padding: 0;
+
+    list-style: none;
+}
+
+@media (max-width: 600px) {
+
+    
 }
