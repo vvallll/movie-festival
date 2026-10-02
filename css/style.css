@@ -113,6 +113,12 @@ tbody tr:hover {
     background-color: #211d1b;
 }
 
+legend {
+    font-family: Georgia, "Times New Roman", serif;
+    font-size: 1.2rem;
+    color: #f1eadf;
+}
+
 nav ul {
     display: flex;
     flex-direction: row;
@@ -128,7 +134,24 @@ nav ul {
     list-style: none;
 }
 
-@media (max-width: 600px) {
+.gallery {
+    display: flex;
+    gap: 20px;
+    width: 100%;
+}
 
-    
+.gallery img {
+    width: calc((100% - 60px) / 4);
+    height: auto;
+    object-fit: cover;
+}
+
+@media (max-width: 600px) {
+    .gallery {
+        gap: 10px;
+    }
+
+    .gallery img {
+        width: calc((100% - 30px) / 4);
+    }
 }

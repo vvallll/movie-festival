@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta name="author" content="Valeria K">
+        <meta name="description" content="Vesper is a fictional independent film festival celebrating intimate, atmospheric, and thought-provoking cinema in London.">
+        <meta name="keywords" content="film festival, Vesper, London, independent films, short films, film festival website">
+        <title>Vesper Film Festival - Tickets</title>
+        <link rel="icon" href="img/video.svg" type="image/x-icon">
+        <link rel="stylesheet" href="css/style.css" type="text/css">
+    </head>
+
+    <body class="container">
+        <header>
+            <h1 class="festival-title">Vesper Film Festival ✦</h1>
+            <nav>
+                <ul>
+                    <li><a href="index.html">home</a></li>
+                    <li><a href="filmList.html">films</a></li>
+                    <li><a href="programme.html">programme</a></li>
+                    <li><a href="tickets.html">tickets</a></li>
+                    <li><a href="contact.html">contact</a></li>
+                </ul>
+            </nav>
+        </header>
+
+        <hr>
+
+        <main>
+            <article>
+                <h2>Tickets for Vesper Film Festival</h2>
+                <p>Get your tickets for the Vesper Film Festival and experience the best of independent cinema. Tickets are available for individual films or as a festival pass.</p>
+            </article>
+            <hr>
+            <article>
+                <h2>Ticket Options</h2>
+                <table>
+                    <tr>
+                        <th>Ticket Type</th>
+                        <th>Description</th>
+                        <th>Price</th>
+                    </tr>
+                    <tr>
+                        <td>Single Film Ticket</td>
+                        <td>Access to one event of your choice.</td>
+                        <td>£10</td>
+                    </tr>
+                    <tr>
+                        <td>Day Pass</td>
+                        <td>Access to all events on a specific day of the festival.</td>
+                        <td>£25</td>
+                    </tr>
+                    <tr>
+                        <td>Festival Pass</td>
+                        <td>Access to all events during the festival.</td>
+                        <td>£50</td>
+                    </tr>
+                    <tr>
+                        <td>Student Discount</td>
+                        <td>20% off for students with valid ID.</td>
+                        <td>£40</td>
+                    </tr>
+                </table>
+            </article>
+            <hr>
+            <article>
+                <h2>How to Purchase Tickets</h2>
+                <p>Tickets can be purchased online through our official website or at the festival box office during the event. We recommend purchasing tickets in advance to secure your spot, as events may sell out quickly.</p>
+                <p>For online purchases, please fill out the form below to select your desired ticket type and complete the payment process. You will receive a confirmation email with your ticket details.</p>
+                <p>For box office purchases, please visit the festival venue during the event hours. Our staff will assist you with ticket selection and payment. Please note that cash and card payments are accepted at the box office.</p>
+            </article>
+            <hr>
+            <article>
+                <h2>Form for Ticket Purchases</h2>
+                <form action="submit_ticket_form.php" method="post">
+                    <label for="ticket_type">Ticket Type:</label>
+                    <select id="ticket_type" name="ticket_type" required>
+                        <option value="single">Single Film Ticket</option>
+                        <option value="day">Day Pass</option>
+                        <option value="festival">Festival Pass</option>
+                        <option value="student">Student Discount</option>
+                    </select>
+                    <br><br>
+                    <label for="name">Name:</label>
+                    <input type="text" id="name" name="name" required placeholder="Full Name">
+                    <br><br>
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email" required placeholder="Email Address">
+                    <br><br>
+                    <input type="submit" value="Purchase Tickets">
+                </form>
+            </article>
+        </main>
+        <hr>
+        <footer>
+            <p>&copy; 2026 Vesper Film Festival. All rights reserved.</p>
+        </footer>
+    </body>
